@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practica Alerta</title>
+</head>
+</html>
+<h2>Alerta con html</h2>
+
+<input type="button" value="Mensaje" onclick="mensaje()">
+<hr>
+<p>alerta al presionar un checkbox</p>
+<input type="checkbox" name="presion" onclick="presion()">
+<hr>
+<p> escribir con javascript</p>
+<input type="button" value="escribe el mensaje" onclick="document.write('Hola bienvenido att isa martinez');">
+<hr>
+<p>vinculos con alertas</p>
+<a href="javascript:alert('has llegado a una alerta');">darle click</a>
+<hr>
+<a href="javascript:window.print();">IMPRIMIR PANTALLA</a>
+<hr>
+<p> alerta con opciones aceptar y cancelar</p>
+<a href="#" onclick="salir()"> salir de la practica</a>
+
+<!-- funcion boton-->
+<script>
+    function mensaje(){
+        alert("esto es una alerta creada con una funcion");
+    }
+</script>
+<!-- funcion checkbox-->
+<script>
+    function presion(){
+        alert("le has dado click al checkbox");
+    }
+</script>
+<!--funcion escribir-->
+<!--texto
+    <script>
+        fuction escribir(){
+            document.write("es facil trabajar con el write en javascript att. isa martinez");
+        }
+    <script/>
+-->
+<script>
+    funcion salir(){
+        var salir=confirm("¿deseas salir de la practica?")
+        if (salir) {
+            alert(" un placer estas saliendo de la pagina")
+            window.location =""
+        else{
+            alert("gracias sigues aqui");
+        }
+    }
+</script>

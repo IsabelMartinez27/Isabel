@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Suma de numeros</title>
+</head>
+<body>
+        <h1>Suma enteros</h1>
+        <p>introduce dos cantidades enteras en cada una de las cajas de texto</p>
+        <form>
+            <input type="text" name="numero1" id="numero1"> + <input type="text" name="numero2" id="numero2">
+            <input type="button" value="sumar" onclick="suma()">
+            <input type="reset" value="borrar">
+        </form>
+        <script>
+            function suma(){
+                resultado = parseInt(numero1.value) + parseInt(numero2.value);
+                alert("el resultado de la suma es:" + resultado);
+            }
+        </script>    
+    </body>
+</html>
